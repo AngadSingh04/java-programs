@@ -15,8 +15,10 @@ public class java_remainder_theorem {
                 break;
             }else{
                 System.out.println("nhi he ji");
+                break;
             }
         }
+        sc.close();
     }
 }
 
