@@ -1,0 +1,2 @@
+A compiler is a system software.
+A compiler is a computer program that translates a program written in a high-level language to the machine language of a computer. 
