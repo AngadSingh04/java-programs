@@ -1,4 +1,4 @@
-class AdditionThread extends Thread{
+class MyRunnable implements Runnable{
     @Override
     public void run(){
         for(int i = 1; i <= 10; i++){
@@ -11,16 +11,17 @@ class AdditionThread extends Thread{
         }
     }
 } 
-class MultiplicationThread extends Thread{
-    @Override
-    public void run(){
+// class MultiplicationThread extends Thread{
+//     @Override
+//     public void run(){
 
-    }
-}
+//     }
+// }
 public class MyThread {
     public static void main(String[] args) {
-        MyThreadApp t1 = new MyThreadApp();
-        MyThreadApp t2 = new MyThreadApp();
+       MyRunnable myRunnable = new MyRunnable();
+       Thread t1 = new Thread(myRunnable);
+       Thread t2 = new Thread(myRunnable);
 
         t1.start();// Concurrent
         t2.start();// Concurrent
