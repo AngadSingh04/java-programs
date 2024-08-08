@@ -14,6 +14,7 @@ public class CollectionsDemo {
         System.out.println(list1);
         Collections.shuffle(list1);
         System.out.println(list1);
+        System.out.println(list1.get(0));
 
     }
 }
