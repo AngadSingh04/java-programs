@@ -11,7 +11,6 @@ class Book {
 }
 
 // Main class to test the Book class
-public class MainClass {
     public static void main(String[] args) {
         // Create instances of the Book class
         Book book1 = new Book();
